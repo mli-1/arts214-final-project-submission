@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+   <!-- Replace FIRST NAME and LAST NAME below with your first and last names. -->
+   <title> Michael Li | Final Project </title>
+
+  <!-- <link rel="stylesheet" href="css/reset.css"> -->
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/unslider.css">
+   <link rel="stylesheet" href="css/unslider-dots.css">
+</head>
+
+<body>
+	<header>
+    	<div id="logo">
+        <h1><a href="main.html">MICHAEL</a></h1>
+      </div>
+      <div id="rightside">
+    		<ul>
+    			<li><a href="contact.html">CONTACT</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="portfolio.html">PORTFOLIO</a></li>
+    		</ul>
+    	</div>
+  </header>
+
+
+    <div class="my-slider">
+    	<ul>
+    		<li><img id="ny1" src="img/nyc01.png"/></li>
+        <li><img id="ny2" src="img/nyc02.png"/></li>
+        <li><img id="ny3" src="img/nyc03.png"/></li>
+    	</ul>
+    </div>
+
+
+    <footer>
+      <a href="http://instagram.com"><img id="insta" src="img/insta.png" width="75" height="75"/></a>
+      <a href="http://twitter.com"><img id="twit" src="img/twit.png" width="75" height="75"/> </a>
+      <p>PLACEHOLDER@GMAIL.COM</p>
+    </footer>
+
+
+  <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="js/unslider.js"></script>
+  <script>
+		jQuery(document).ready(function($) {
+			$('.my-slider').unslider(
+        {fluid: true,
+        dots: true,
+        arrows: { prev: '<a class="unslider-arrow prev"><img src="img/leftarrow.png"</a>',
+    next: '<a class="unslider-arrow next"><img src="img/rightarrow.png"</a>'}
+      }
+      );
+		});
+	</script>
+</body>
+</html>
